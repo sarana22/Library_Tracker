@@ -204,6 +204,8 @@ function App() {
                 <p><strong>Publisher:</strong> {book.publisher}</p>
                 <p><strong>ISBN:</strong> {book.isbn}</p>
                 <p><strong>Status:</strong> {book.status}</p>
+                <p><strong>Checked Out By:</strong> {book.checkedOutBy || 'N/A'}</p>
+                <p><strong>Due Date:</strong> {book.dueDate ? new Date(book.dueDate).toLocaleDateString() : 'N/A'} </p>
                 <div className="form-actions">
                   <button
                     className="primary-btn"
